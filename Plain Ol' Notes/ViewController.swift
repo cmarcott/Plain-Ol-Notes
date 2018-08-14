@@ -50,7 +50,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         if table.isEditing {
             return
         }
-        let name:String = "Item \(data.count + 1)"
+        let name:String = ""
         data.insert(name, at: 0)
         let indexPath:IndexPath = IndexPath(row: 0, section: 0)
         table.insertRows(at: [indexPath], with: .automatic)
